@@ -1308,17 +1308,19 @@ p {
   }
 
   .hero {
-    padding-top: 100px;
-    min-height: 90vh;
+    padding-top: 80px;
+    min-height: 100vh;
+    padding-bottom: var(--spacing-xl);
   }
 
   .hero-main-content {
     grid-template-columns: 1fr;
-    gap: var(--spacing-2xl);
+    gap: var(--spacing-xl);
     text-align: center;
     justify-items: center;
     min-height: auto;
-    padding: var(--spacing-2xl) var(--spacing-lg);
+    padding: var(--spacing-lg) var(--spacing-md);
+    max-width: 100%;
   }
 
   .hero-text-section {
@@ -1326,26 +1328,69 @@ p {
     order: 2;
     align-items: center;
     max-width: 100%;
+    padding: 0 var(--spacing-sm);
   }
 
   .hero-right-section {
     order: 1;
+    width: 100%;
+    max-width: 100%;
   }
 
   .hero-journey-compact {
     max-width: 100%;
+    padding: 0 var(--spacing-sm);
   }
 
   .episode-card-compact {
     padding: var(--spacing-sm);
+    height: 60px;
+    flex: 0 0 140px;
   }
 
   .episode-title-compact {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .episode-description-compact {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
+  }
+
+  .hero-badge {
+    font-size: 0.8rem;
+    padding: var(--spacing-xs) var(--spacing-sm);
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 8vw, 3rem);
+    margin: var(--spacing-md) 0;
+  }
+
+  .name-greeting {
+    font-size: clamp(1rem, 4vw, 1.2rem);
+  }
+
+  .hero-subtitle {
+    font-size: clamp(1rem, 4vw, 1.3rem);
+    margin: var(--spacing-lg) 0;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    margin: var(--spacing-lg) 0;
+    padding: 0 var(--spacing-sm);
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin: var(--spacing-xl) 0;
+  }
+
+  .hero-cta .btn {
+    width: 100%;
+    max-width: 280px;
+    padding: var(--spacing-md) var(--spacing-lg);
   }
 
   .hero-cta {
@@ -1360,8 +1405,16 @@ p {
 
 
   .photo-container {
-    width: 280px;
-    height: 280px;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
+
+  .hero-photo-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-lg);
   }
 
   .decoration-1 {
@@ -3564,4 +3617,91 @@ h1, h2, h3, h4, h5, h6 {
 .journey-title {
   font-family: 'Montserrat', 'Inter', 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif !important;
   font-weight: 800 !important;
+}/* Extra
+ Small Mobile Devices */
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 70px;
+    min-height: 100vh;
+  }
+
+  .hero-main-content {
+    padding: var(--spacing-md) var(--spacing-sm);
+    gap: var(--spacing-lg);
+  }
+
+  .hero-title {
+    font-size: clamp(1.8rem, 10vw, 2.5rem);
+  }
+
+  .name-greeting {
+    font-size: 1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .photo-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .episode-card-compact {
+    flex: 0 0 120px;
+    height: 50px;
+    padding: var(--spacing-xs);
+  }
+
+  .episode-title-compact {
+    font-size: 0.75rem;
+  }
+
+  .episode-description-compact {
+    font-size: 0.65rem;
+  }
+
+  .episode-number-compact {
+    font-size: 0.6rem;
+    min-width: 20px;
+    padding: 1px 4px;
+  }
+
+  .episode-icon-compact {
+    font-size: 0.8rem;
+  }
+
+  .journey-badge-compact {
+    font-size: 0.75rem;
+    padding: 4px var(--spacing-sm);
+  }
+
+  .hero-badge {
+    font-size: 0.75rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: var(--spacing-sm) var(--spacing-lg);
+  }
+
+  .decoration-1,
+  .decoration-2,
+  .decoration-3,
+  .decoration-4 {
+    display: none;
+  }
+
+  .skill-bubble {
+    display: none;
+  }
+
+  .floating-shape {
+    display: none;
+  }
 }
