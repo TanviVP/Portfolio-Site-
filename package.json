@@ -2,22 +2,25 @@
   "name": "netflix-style-portfolio",
   "version": "1.0.0",
   "description": "A Netflix-inspired portfolio showcasing professional experience and projects",
+  "homepage": "https://tanvivp.github.io/Portfolio-Site-",
   "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "react-scripts start"
+    "dev": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "framer-motion": "^10.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "react-router-dom": "^6.8.0",
-    "framer-motion": "^10.0.0",
-    "react-intersection-observer": "^9.4.0",
     "react-icons": "^4.7.1",
+    "react-intersection-observer": "^9.4.0",
+    "react-router-dom": "^6.8.0",
+    "react-scripts": "5.0.1",
     "swiper": "^9.0.0"
   },
   "browserslist": {
@@ -41,5 +44,8 @@
     "experience"
   ],
   "author": "Tanvi Pakhale",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
