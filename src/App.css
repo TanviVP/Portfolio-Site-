@@ -42,7 +42,7 @@
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Inter', 'Netflix Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.6;
   color: var(--text-primary);
   background:
@@ -520,7 +520,7 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-family: 'Montserrat', 'Inter', sans-serif;
+  font-family: 'Montserrat', 'Netflix Sans', 'Inter', 'Poppins', sans-serif;
   letter-spacing: 0.05em;
   text-shadow: 0 2px 4px rgba(212, 175, 55, 0.1);
   position: relative;
@@ -2247,7 +2247,7 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-family: 'Montserrat', 'Inter', sans-serif;
+  font-family: 'Montserrat', 'Netflix Sans', 'Inter', 'Poppins', sans-serif;
   letter-spacing: 0.02em;
 }
 

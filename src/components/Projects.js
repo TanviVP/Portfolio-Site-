@@ -7,7 +7,7 @@ const Projects = () => {
       description: "Conducted a comprehensive analysis of Vodafone-Idea using Python, Power BI, and Excel, focusing on financial performance, operational metrics, and subscriber trends. The project aimed to identify key loss drivers, analyze historical patterns, perform forecasting, and provide actionable insights for strategic decision-making.",
       tags: ["Excel", "Python", "PowerBI"],
       link: "https://github.com/TanviVP/Vodafone-idea-analysis",
-      image: "/images/vodafone - project.jpg",
+      image: `${process.env.PUBLIC_URL}/images/vodafone - project.jpg`,
       imageAlt: "Vodafone Idea Analysis Dashboard"
     },
     {
@@ -15,7 +15,7 @@ const Projects = () => {
       description: "Analyzed crimes against women in India in 2022 using Python and Tableau to identify trends, patterns, and state-wise variations, providing actionable insights for awareness and policy planning.",
       tags: ["PowerBI", "Python", "Data Analysis"],
       link: "https://vimeo.com/1124465496?share=copy",
-      image: "/images/crime-analysis project.jpg",
+      image: `${process.env.PUBLIC_URL}/images/crime-analysis project.jpg`,
       imageAlt: "Crime Analysis Dashboard"
     },
     {
@@ -23,7 +23,7 @@ const Projects = () => {
       description: "Developed a hashtag recommendation system using Python and NLP techniques to suggest relevant hashtags for text content, improving content reach and engagement on social media platforms.",
       tags: ["Python", "NLP", "Machine Learning"],
       link: "https://hashtag-genuis.streamlit.app/#hash-tag-genius",
-      image: "/images/hashtag-project.jpg",
+      image: `${process.env.PUBLIC_URL}/images/hashtag-project.jpg`,
       imageAlt: "Hashtag Recommendation System"
     },
     {
@@ -31,7 +31,7 @@ const Projects = () => {
       description: "Developed a responsive website for Vrundavan Society featuring four core pages – Home, About Us, Events, and Contact Us – to provide an organized digital presence and improve community engagement.",
       tags: ["HTML", "CSS", "JS"],
       link: "https://tanvivp.github.io/Society-Website-/",
-      image: "/images/2ndimg.jpg",
+      image: `${process.env.PUBLIC_URL}/images/2ndimg.jpg`,
       imageAlt: "Vrundavan Society Website"
     }
   ];

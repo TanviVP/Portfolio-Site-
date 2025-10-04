@@ -100,7 +100,7 @@ const Hero = () => {
               <div className="photo-glow"></div>
               <div className="photo-frame">
                 <img
-                  src="/images/Tanvi Professional Photo.jpg"
+                  src={`${process.env.PUBLIC_URL}/images/Tanvi Professional Photo.jpg`}
                   alt="Tanvi Pakhale - Data Analyst & Developer"
                   className="hero-photo"
                   onError={(e) => {
