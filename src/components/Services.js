@@ -3,7 +3,7 @@ import React from 'react';
 const Services = () => {
   const services = [
     {
-      icon: "/images/data analytics logo.jpg",
+      icon: `${process.env.PUBLIC_URL}/images/data analytics logo.jpg`,
       title: "Data Analysis & Visualization",
       description: "Transform your raw data into actionable insights with comprehensive analysis and interactive dashboards using Power BI, Tableau, and Python.",
       features: [
@@ -15,7 +15,7 @@ const Services = () => {
       price: "Depend on project's scope"
     },
     {
-      icon: "/images/frontend developer logo.jpg",
+      icon: `${process.env.PUBLIC_URL}/images/frontend developer logo.jpg`,
       title: "Web Development",
       description: "Build modern, responsive websites and web applications using React, JavaScript, HTML5, and CSS3 with clean, professional designs.",
       features: [
@@ -27,7 +27,7 @@ const Services = () => {
       price: "Depend on project's scope"
     },
     {
-      icon: "/images/Business consulting.jpg",
+      icon: `${process.env.PUBLIC_URL}/images/Business consulting.jpg`,
       title: "Business Intelligence Consulting",
       description: "Help businesses make data-driven decisions with custom BI solutions, KPI tracking, and performance analytics.",
       features: [
@@ -39,7 +39,7 @@ const Services = () => {
       price: "Depend on project's scope"
     },
     {
-      icon: "/images/python autmation.jpg",
+      icon: `${process.env.PUBLIC_URL}/images/python autmation.jpg`,
       title: "Python Automation",
       description: "Automate repetitive tasks, data processing workflows, and create custom scripts to improve business efficiency.",
       features: [
@@ -51,7 +51,7 @@ const Services = () => {
       price: "Depend on project's scope"
     },
     {
-      icon: "/images/exce;.jpg",
+      icon: `${process.env.PUBLIC_URL}/images/exce;.jpg`,
       title: "Excel & Spreadsheet Solutions",
       description: "Advanced Excel solutions including complex formulas, macros, data modeling, and automated reporting systems.",
       features: [
@@ -63,7 +63,7 @@ const Services = () => {
       price: "Depend on project's scope"
     },
     {
-      icon: "/images/data science.jpg",
+      icon: `${process.env.PUBLIC_URL}/images/data science.jpg`,
       title: "Data Science Projects",
       description: "End-to-end data science solutions including predictive modeling, machine learning, and recommendation systems.",
       features: [
@@ -86,11 +86,11 @@ const Services = () => {
             <p>Professional data analytics and web development services for your business needs</p>
           </div>
         </div>
-        
+
         <div className="services-intro">
           <p className="services-description">
-            I offer comprehensive freelance services in data analytics, web development, and business intelligence. 
-            With expertise in modern tools and technologies, I help businesses transform their data into actionable insights 
+            I offer comprehensive freelance services in data analytics, web development, and business intelligence.
+            With expertise in modern tools and technologies, I help businesses transform their data into actionable insights
             and build powerful digital solutions.
           </p>
         </div>
@@ -99,8 +99,8 @@ const Services = () => {
           {services.map((service, index) => (
             <div key={index} className="service-card">
               <div className="service-icon">
-                <img 
-                  src={service.icon} 
+                <img
+                  src={service.icon}
                   alt={service.title}
                   className="service-icon-image"
                   onError={(e) => {
@@ -109,13 +109,13 @@ const Services = () => {
                     e.target.nextSibling.style.display = 'flex';
                   }}
                 />
-                <div className="service-icon-fallback">
+                <div className="service-icon-fallback" style={{ display: 'none' }}>
                   <span className="fallback-emoji">🔧</span>
                 </div>
               </div>
               <h3 className="service-title">{service.title}</h3>
               <p className="service-description">{service.description}</p>
-              
+
               <ul className="service-features">
                 {service.features.map((feature, featureIndex) => (
                   <li key={featureIndex}>
@@ -124,7 +124,7 @@ const Services = () => {
                   </li>
                 ))}
               </ul>
-              
+
               <div className="service-price">{service.price}</div>
               <button className="btn btn-primary service-btn">
                 Get Quote
