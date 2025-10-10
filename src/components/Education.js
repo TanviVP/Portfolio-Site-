@@ -22,14 +22,14 @@ const Education = () => {
       institution: "Jai Hind High School and Junior College",
       location: "Pune, Maharashtra",
       duration: "2020 - 2022",
-      percentage: "69.17%"
+      
     },
     {
       degree: "Primary and Secondary School",
       institution: "Baby's English High School",
       location: "Pune, Maharashtra",
       duration: "2013 - 2020",
-      percentage: "91.20%"
+     
     }
   ];
 
