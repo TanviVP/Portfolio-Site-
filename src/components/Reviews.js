@@ -39,7 +39,7 @@ const Reviews = () => {
 
         <div className="reviews-stats">
           <div className="stat-item">
-            <div className="stat-number">50+</div>
+            <div className="stat-number">10</div>
             <div className="stat-label">Projects Completed</div>
           </div>
           <div className="stat-item">
